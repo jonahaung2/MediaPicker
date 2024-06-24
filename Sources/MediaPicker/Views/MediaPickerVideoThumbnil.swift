@@ -40,7 +40,7 @@ public struct MediaPickerVideoThumbnil: View{
     @Binding private var frameImage: UIImage?
     
     
-    internal init(asset: AVAsset, image: Binding<UIImage?>) {
+    public init(asset: AVAsset, image: Binding<UIImage?>) {
         self.asset = asset
         self.imageGenerator = AVAssetImageGenerator(asset: asset)
         self.imageGenerator.requestedTimeToleranceBefore = CMTime(value: 1, timescale: 30)

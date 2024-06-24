@@ -26,10 +26,8 @@ public struct PhotoPickupButton<Label: View>: View{
             switch newValue {
             case .success(let image):
                 self.image = image
-                break
             default:
                 self.image = nil
-                break
             }
         }
     }
